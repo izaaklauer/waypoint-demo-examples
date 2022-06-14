@@ -9,7 +9,7 @@ app "example-nodejs-eks" {
     use "pack" {}
     registry {
       use "docker" {
-        repository = "ttl.sh:izaaktest"
+        image = "ttl.sh:izaaktest"
         tag        = "1h"
       }
     }
