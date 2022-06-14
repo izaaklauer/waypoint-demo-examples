@@ -8,10 +8,9 @@ app "example-nodejs-eks" {
   build {
     use "pack" {}
     registry {
-      use "aws-ecr" {
-        region     = "us-east-1"
-        repository = "waypoint-example"
-        tag        = "latest"
+      use "docker" {
+        repository = "ttl.sh:izaaktest"
+        tag        = "1h"
       }
     }
   }
